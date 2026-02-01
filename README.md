@@ -202,9 +202,10 @@ Summary :
 
 5) Demonstrates the model through a web application
 
-# Image of the app : 
+##  Web Application Screenshots
 
-![alt text](image.png)
 
-![alt text](image-1.png)
+![LSTM Web App UI](image.png)
 
+
+![LSTM Web App Output](image-1.png)
