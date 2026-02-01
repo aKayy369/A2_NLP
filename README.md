@@ -183,4 +183,4 @@ output is converted back to readable text and displayed on the webpage in real t
 WEB APP : 
 
 
-<p align="center"> <img src="image.png" width="45%"> <img src="image-1.png" width="45%"> </p>
+<p align="center"> <img src="Images/Promp1.png" width="45%"> <img src="Images/Prompt2.pngpng" width="45%"> </p>
