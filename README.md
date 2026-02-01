@@ -7,18 +7,18 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
-This project implements a **word-level language model using an LSTM** to generate coherent text
-given an input prompt. The model is trained on a text-rich dataset and learns to predict the next
+This project implements a **word-level language model using an LSTM** to generate coherent text  
+given an input prompt. The model is trained on a text-rich dataset and learns to predict the next  
 word based on previous context.
 
-In addition, a **simple web application** is developed to demonstrate real-time text generation
+In addition, a **simple web application** is developed to demonstrate real-time text generation  
 using the trained model.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ├── A2_main.ipynb # Jupyter notebook (training, evaluation, inference)
 ├── README.md # Project documentation
@@ -33,7 +33,7 @@ using the trained model.
 
 ---
 
-## 📊 Task 1 – Dataset Acquisition
+## Task 1 – Dataset Acquisition
 
 ### Dataset Used
 **The Rizz Corpus** (HuggingFace)
@@ -48,7 +48,7 @@ using the trained model.
 
 ---
 
-## 🧹 Task 2 – Data Preprocessing
+## Task 2 – Data Preprocessing
 
 The following preprocessing steps were applied:
 
@@ -78,16 +78,15 @@ The following preprocessing steps were applied:
 
 ---
 
-## 🧠 Task 2 – Model Architecture & Training
+## Task 2 – Model Architecture & Training
 
 ### Model Architecture
 
-- Embedding Layer
-- 2-layer LSTM
-- Dropout
-- Linear Output Layer
-- Softmax applied during inference
-
+- Embedding Layer  
+- 2-layer LSTM  
+- Dropout  
+- Linear Output Layer  
+- Softmax applied during inference  
 
 ### Hyperparameters
 
@@ -105,16 +104,16 @@ The following preprocessing steps were applied:
 
 ### Training Details
 
-- Gradient clipping applied to prevent exploding gradients
-- ReduceLROnPlateau scheduler used to reduce learning rate when validation loss stops improving
-- Best model saved based on lowest validation loss
+- Gradient clipping applied to prevent exploding gradients  
+- ReduceLROnPlateau scheduler used to reduce learning rate when validation loss stops improving  
+- Best model saved based on lowest validation loss  
 - Performance evaluated using **perplexity**
 
 ---
 
-## 🧪 Task 2 – Evaluation
+## Task 2 – Evaluation
 
-After training, the best-performing model (based on validation loss) was loaded and evaluated on
+After training, the best-performing model (based on validation loss) was loaded and evaluated on  
 the test set.
 
 - **Metric:** Perplexity  
@@ -122,33 +121,33 @@ the test set.
 
 ---
 
-## ✍️ Task 3 – Text Generation (Inference)
+## Task 3 – Text Generation (Inference)
 
 During inference:
 
-1. The user provides a text prompt.
-2. The prompt is tokenized and numericalized.
-3. The model predicts the probability distribution of the next word.
-4. A word is sampled and appended to the input.
-5. The process repeats autoregressively.
+1. The user provides a text prompt.  
+2. The prompt is tokenized and numericalized.  
+3. The model predicts the probability distribution of the next word.  
+4. A word is sampled and appended to the input.  
+5. The process repeats autoregressively.  
 
 ### Sampling Strategies Used
 
-- Temperature scaling
-- Top-k sampling
-- Top-p (nucleus) sampling
+- Temperature scaling  
+- Top-k sampling  
+- Top-p (nucleus) sampling  
 
 These strategies allow control over creativity versus coherence.
 
 ---
 
-## 🌐 Task 3 – Web Application
+## Task 3 – Web Application
 
 A simple **Flask web application** is implemented to demonstrate text generation.
 
 ### Features
 
-- Text input box for prompt
+- Text input box for prompt  
 - Adjustable controls:
   - Maximum generated tokens
   - Temperature
@@ -165,18 +164,19 @@ A simple **Flask web application** is implemented to demonstrate text generation
 3. The backend performs inference using the trained model.
 4. Generated text is returned and displayed in the browser.
 
+---
+
 ## Web Application – Model Interface (Summary)
 
-The web application provides a simple interface for interacting with the trained LSTM-based language
-model. It is built using Flask and allows users to enter a text prompt through a web form. The backend
-loads the trained PyTorch model and the saved vocabulary to ensure that preprocessing during inference
+The web application provides a simple interface for interacting with the trained LSTM-based language  
+model. It is built using Flask and allows users to enter a text prompt through a web form. The backend  
+loads the trained PyTorch model and the saved vocabulary to ensure that preprocessing during inference  
 matches the training setup.
 
-When a user submits a prompt, it is tokenized, converted into numerical indices, and passed to the
-LSTM model for autoregressive text generation. The model predicts the next token step by step, applies
-temperature-based sampling, and generates a coherent continuation of the input text. The generated
+When a user submits a prompt, it is tokenized, converted into numerical indices, and passed to the  
+LSTM model for autoregressive text generation. The model predicts the next token step by step, applies  
+temperature-based sampling, and generates a coherent continuation of the input text. The generated  
 output is converted back to readable text and displayed on the webpage in real time.
-
 
 ---
 
@@ -186,26 +186,7 @@ output is converted back to readable text and displayed on the webpage in real t
 cd app
 python app.py
 
-Then open the browser at:
-
-http://127.0.0.1:5000
-
-Summary :
-
-1) This project successfully:
-
-2) Trains an LSTM-based language model
-
-3) Evaluates performance using perplexity
-
-4) Generates coherent text from user prompts
-
-5) Demonstrates the model through a web application
-
-##  Web Application Screenshots
 
 
-![LSTM Web App UI](image.png)
 
-
-![LSTM Web App Output](image-1.png)
+<p align="center"> <img src="image.png" width="45%"> <img src="image-1.png" width="45%"> </p>
