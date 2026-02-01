@@ -180,13 +180,7 @@ output is converted back to readable text and displayed on the webpage in real t
 
 ---
 
-## How to Run the Web App
-
-```bash
-cd app
-python app.py
-
-
+WEB APP : 
 
 
 <p align="center"> <img src="image.png" width="45%"> <img src="image-1.png" width="45%"> </p>
