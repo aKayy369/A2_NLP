@@ -188,4 +188,4 @@ output is converted back to readable text and displayed on the webpage in real t
 WEB APP : 
 
 
-<p align="center"> <img src="prompt.png"> <img src="Promp1.png"> <img src="prompt3.png"><img src="prompt4.png"></p>
+<p align="center"> <img src="images/image.png"> <img src="images/image-1.png"> <img src="images/image-2.png"><img src="images/image-3.png"><img src="images/image-4.png"></p>
