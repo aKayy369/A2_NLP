@@ -40,7 +40,12 @@ using the trained model.
 
 - **Source:** https://huggingface.co/datasets/the-rizz/the-rizz-corpus  
 - **Description:**  
-  A large text dataset containing informal, conversational English suitable for language modeling.
+  **Description:**  
+A large text corpus composed of informal and conversational English data. The dataset captures
+natural language usage, including varied vocabulary, sentence lengths, and casual linguistic
+patterns. This makes it suitable for training word-level language models that aim to learn
+contextual word dependencies and generate coherent text sequences.It is a collection of informal conversations taken from various social media apps.
+
 - **Reason for Selection:**
   - Text-rich and diverse
   - Publicly available
